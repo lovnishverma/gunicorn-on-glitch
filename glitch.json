@@ -1,6 +1,6 @@
 {
   "install": "pip3 install --user -r requirements.txt",
-  "start": "PYTHONUNBUFFERED=true python3 server.py",
+  "start": "gunicorn server:app --bind 0.0.0.0:$PORT",
   "watch": {
     "ignore": [
       "\\.pyc$"
