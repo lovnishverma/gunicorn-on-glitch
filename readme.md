@@ -1,5 +1,4 @@
 **Gunicorn for a more production-like environment**
-Sure! Here's a detailed **README.md** for your Flask + Gunicorn app running on Glitch with your current setup and logs context:
 
 # Flask + Gunicorn App on Glitch
 
