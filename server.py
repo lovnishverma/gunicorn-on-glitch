@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from datetime import datetime, timedelta
 import os
 
@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def test():
-    return 'hello gunicorn on glitch!'
+    return render_template("index.html")
 
 @app.route('/time')
 def get_current_time():
